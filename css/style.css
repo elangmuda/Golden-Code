@@ -2,6 +2,25 @@
 html {
   overflow-x: hidden; }
 
+  .custom-card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;  /* Setel tinggi card sesuai keinginan */
+    justify-content: space-between; /* Menjaga jarak antara gambar dan teks */
+  }
+
+  .card-img-top {
+    width: 100%;         /* Membuat gambar mengisi lebar penuh card */
+    height: 300px;       /* Atur tinggi gambar sesuai keinginan */
+    object-fit: cover;   /* Membuat gambar menutupi area card tanpa distorsi */
+  }
+
+  .card-body {
+    flex-grow: 1;  /* Membuat ruang teks tumbuh untuk mengisi ruang yang tersisa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 body {
   line-height: 1.7;
   color: gray;
