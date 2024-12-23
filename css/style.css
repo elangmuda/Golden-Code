@@ -1675,10 +1675,18 @@ body:after {
     margin-bottom: 0; }
 
 .team-member figure {
+  width: 100%; /* Pastikan gambar memenuhi lebar kolom */
   margin: 0;
   padding: 0;
   position: relative;
   overflow: hidden; }
+
+  .team-member figure img {
+    width: 100%; /* Gambar mengisi seluruh lebar kolom */
+    height: 500px; /* Tetapkan tinggi gambar */
+    object-fit: cover; /* Pastikan gambar menutupi area tanpa distorsi */
+    border-radius: 8px; /* Opsional: tambahkan sudut melengkung */
+  }
 
 .team-member .social {
   position: absolute;
